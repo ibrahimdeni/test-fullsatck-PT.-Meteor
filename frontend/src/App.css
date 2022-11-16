@@ -37,7 +37,188 @@
   }
 }
 
+.bg-modal {
+  background-color: #cdf8ff;
+}
+
+.bg-modal1 {
+  background-color: #81fff9e3;
+}
+
+.form-modal {
+  background-color: #fafeffe3;
+  -webkit-text-fill-color: #26a3c5;
+  font-weight: 600;
+}
+
 .bukuImg {
-  height: 250px;
+  height: 258px;
   object-fit: cover;
+}
+
+.card-book {
+  width: 50% !important;
+}
+
+.title__nav {
+  color: rgb(105, 171, 247);
+}
+
+.bookNav {
+  width: 100px;
+}
+
+.bg-hero {
+  background-image: url("./assets/images/bg-hero.jpg");
+  height: 70vh;
+  width: 100%;
+  background-size: contain;
+  background-attachment: fixed;
+  margin-top: -80px;
+}
+
+.text-hero {
+  padding-top: 11%;
+  padding-left: 17%;
+}
+
+.text-info {
+  font-size: 1.6em;
+}
+
+.bg-main {
+  background-color: rgb(225, 255, 253);
+}
+
+.bg-must {
+  background-color: white;
+}
+
+.bg-nav {
+  background-color: rgba(8, 255, 255, 0.719) !important;
+}
+
+.bg-carousel {
+  background-color: rgba(167, 255, 255, 0.486);
+}
+
+.img-carousel {
+  width: 66%;
+  object-fit: cover;
+}
+
+.img-carousel1 {
+  width: 70%;
+  object-fit: cover;
+}
+
+.text-form-book {
+  -webkit-text-fill-color: #3dbadd;
+  font-weight: 600;
+}
+
+.text-form-book::placeholder {
+  opacity: 0.5;
+  font-weight: 600;
+}
+
+.BC-bottom {
+  padding-bottom: -100px;
+}
+
+.author {
+  font-size: 12px;
+}
+
+.bg-book-list {
+  background-image: url("./assets/images/bg-books-list2.jpg");
+  /* height: 70vh;
+  width: 100%; */
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.title-book-list {
+  background-color: #38f0f062;
+  border-top-right-radius: 32px !important;
+  border-top-left-radius: 32px !important;
+}
+
+.bg-card-book {
+  background-color: #282c342d;
+  border-radius: 12px;
+  width: 32.9%;
+  justify-items: center;
+}
+
+.card-category {
+  width: 30%;
+  height: 250px;
+  margin: 10px auto;
+}
+
+.CC1 {
+  background-image: url("./assets/images/sceneries.jpg");
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.CC2 {
+  background-image: url("./assets/images/encyclo.jpg");
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.CC3 {
+  background-image: url("./assets/images/comic.jpg");
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.CC4 {
+  background-image: url("./assets/images/magazine.jpg");
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.CC5 {
+  background-image: url("./assets/images/encyclo2.jpg");
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.CC6 {
+  background-image: url("./assets/images/tutorial.jpg");
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.footer {
+  background-image: url("./assets//images/bg-hero.jpg");
+  height: 80px;
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.text-footer {
+  background-color: #66edf78f;
+  color: #3d4a63;
+}
+
+.TCB {
+  background-color: aliceblue;
+  width: 80%;
+  margin-top: 5px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .bg-hero {
+    background-image: url("./assets/images/bg-hero.jpg");
+    width: 100%;
+    object-fit: contain;
+    height: fit-content;
+  }
 }
