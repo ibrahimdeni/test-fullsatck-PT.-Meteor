@@ -267,6 +267,10 @@
   background-color: #4ed3f893;
 }
 
+.msg {
+  font-size: 12px;
+}
+
 @media only screen and (max-width: 600px) {
   .bg-hero {
     background-image: url("./assets/images/bg-hero.jpg");
