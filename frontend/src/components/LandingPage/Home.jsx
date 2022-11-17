@@ -139,7 +139,7 @@ function LandingPage() {
                     </Card.Title>
                     <Card.Text style={{ fontSize: "13px" }} className="lh-3">
                       <p className="fw-semibold">
-                        author: <br />
+                        category: <br />
                         publisher: <br />
                         published: <br />
                         pages: <br />

@@ -206,12 +206,51 @@
 }
 
 .TCB {
-  background-color: aliceblue;
+  background-color: rgba(240, 248, 255, 0.753);
   width: 80%;
   margin-top: 5px;
   padding-left: 15px;
   padding-bottom: 5px;
   border-radius: 20px;
+}
+
+.sideBar {
+  background-image: url("../src/assets/images/sideBar.jpg");
+  background-attachment: fixed;
+}
+
+.bg-client {
+  background-image: url("../src/assets/images/bg-client2.jpg");
+  height: 70vh;
+  width: 100%;
+  background-size: contain;
+  background-attachment: fixed;
+  margin-top: -80px;
+  padding-top: 180px;
+}
+
+.title-main-client {
+  font-size: 6em;
+  background-color: #3dbadd1c;
+}
+
+.bg-sidenaver {
+  background-color: rgba(77, 114, 131, 0.253);
+}
+
+.list-sidebar {
+  font-weight: 600;
+}
+
+.icon-sidenav {
+  width: 30px;
+  margin-top: -5px;
+}
+
+.icon-menu {
+  width: 70px;
+  height: 40px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {

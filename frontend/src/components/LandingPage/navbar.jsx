@@ -9,13 +9,13 @@ import Register from "./Register";
 import Login from "./Login";
 import bookNav from "../../assets/images/books2-oke.png";
 
-function NavScrollExample() {
+function NavbarLandingPage() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <Navbar className="sticky-top bg-nav" bg="info" expand="lg">
+    <Navbar className="sticky-top shadow bg-nav" bg="info" expand="lg">
       <Container fluid>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Brand
@@ -65,4 +65,4 @@ function NavScrollExample() {
   );
 }
 
-export default NavScrollExample;
+export default NavbarLandingPage;

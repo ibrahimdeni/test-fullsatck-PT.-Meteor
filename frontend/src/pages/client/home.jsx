@@ -1,7 +1,14 @@
 import React from "react";
+import { Navbar, Home, Bookcontainer } from "../../components/client";
 
 const home = () => {
-  return <div>home</div>;
+  return (
+    <>
+      <Navbar />
+      <Home />
+      <Bookcontainer />
+    </>
+  );
 };
 
 export default home;
