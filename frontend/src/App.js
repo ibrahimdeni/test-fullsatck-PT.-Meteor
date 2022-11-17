@@ -11,6 +11,7 @@ import {
 import "./App.css";
 import Home from "./pages/client/home";
 import AllBook from "./pages/client/AllBook";
+import Admin from "./pages/admin/Admin";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/" element={<LandingPage />} />
         <Route path="/home" element={<Home />} />
         <Route path="/books" element={<AllBook />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </>
   );
