@@ -1,5 +1,11 @@
 import React from "react";
-import { Navbar, Home, Bookcontainer } from "../../components/client";
+import {
+  Navbar,
+  Home,
+  Bookcontainer,
+  // CategoriesContainer,
+  Footer,
+} from "../../components/client";
 
 const home = () => {
   return (
@@ -7,6 +13,7 @@ const home = () => {
       <Navbar />
       <Home />
       <Bookcontainer />
+      <Footer />
     </>
   );
 };

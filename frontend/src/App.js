@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/client/home";
+import AllBook from "./pages/client/AllBook";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/books" element={<AllBook />} />
       </Routes>
     </>
   );

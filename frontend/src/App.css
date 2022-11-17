@@ -253,6 +253,20 @@
   cursor: pointer;
 }
 
+.bg-all-books {
+  background-image: url("../src/assets/images/bg-books.jpg");
+  height: 70vh;
+  width: 100%;
+  background-size: contain;
+  background-attachment: fixed;
+  margin-top: -100px;
+  padding-top: 180px;
+}
+
+.title__all-book {
+  background-color: #4ed3f893;
+}
+
 @media only screen and (max-width: 600px) {
   .bg-hero {
     background-image: url("./assets/images/bg-hero.jpg");
