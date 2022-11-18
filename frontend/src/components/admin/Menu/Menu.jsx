@@ -1,7 +1,26 @@
-import React from "react";
+import React, { useContext } from "react";
 import Book from "../../../assets/images/books2-oke.png";
+import { UserContext } from "../../../context/UserContext";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 const Menu = () => {
+  const [state, dispatch] = useContext(UserContext);
+  let navigate = useNavigate();
+
+  const logout = () => {
+    dispatch({
+      type: "LOGOUT",
+    });
+    Swal.fire({
+      icon: "success",
+      title: "Logout Success!",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+    navigate("/");
+  };
+
   return (
     <div>
       <aside className="main-sidebar sidebar-dark-primary elevation-4">
@@ -199,33 +218,18 @@ const Menu = () => {
                 </ul>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <a
+                  onClick={logout}
+                  as="button"
+                  style={{ cursor: "pointer" }}
+                  className="nav-link"
+                >
                   <i className="nav-icon fas fa-table" />
                   <p>
-                    Tables
+                    Logout
                     <i className="fas fa-angle-left right" />
                   </p>
                 </a>
-                <ul className="nav nav-treeview">
-                  <li className="nav-item">
-                    <a href="pages/tables/simple.html" className="nav-link">
-                      <i className="far fa-circle nav-icon" />
-                      <p>Simple Tables</p>
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a href="pages/tables/data.html" className="nav-link">
-                      <i className="far fa-circle nav-icon" />
-                      <p>DataTables</p>
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a href="pages/tables/jsgrid.html" className="nav-link">
-                      <i className="far fa-circle nav-icon" />
-                      <p>jsGrid</p>
-                    </a>
-                  </li>
-                </ul>
               </li>
             </ul>
           </nav>

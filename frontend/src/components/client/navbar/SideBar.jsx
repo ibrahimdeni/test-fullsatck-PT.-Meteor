@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 // import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Collapse from "react-bootstrap/Collapse";
@@ -10,12 +10,19 @@ import { BiCategoryAlt } from "react-icons/bi";
 import { BsInfoSquareFill } from "react-icons/bs";
 import { TiThMenu } from "react-icons/ti";
 import { IoMdLogOut } from "react-icons/io";
+import { UserContext } from "../../../context/UserContext";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
+
 const options = {
   scroll: true,
   backdrop: true,
 };
 
 function SideBar({ ...props }) {
+  const [state, dispatch] = useContext(UserContext);
+  let navigate = useNavigate();
+
   const [showS, setShowS] = useState(false);
 
   const handleCloseS = () => setShowS(false);
@@ -23,6 +30,19 @@ function SideBar({ ...props }) {
 
   const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);
+
+  const logout = () => {
+    dispatch({
+      type: "LOGOUT",
+    });
+    Swal.fire({
+      icon: "success",
+      title: "Logout Success!",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+    navigate("/");
+  };
 
   return (
     <>
@@ -114,6 +134,7 @@ function SideBar({ ...props }) {
             <ListGroup.Item
               action
               as="button"
+              onClick={logout}
               className="bg-transparent list-sidebar"
             >
               <h3 className="text-danger">

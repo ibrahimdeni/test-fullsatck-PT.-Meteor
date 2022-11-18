@@ -11,9 +11,10 @@ const jwt = require("jsonwebtoken");
 //CONTROL REGISTER
 exports.register = async (req, res) => {
   // our validation schema here
+  console.log(req.body);
   const schema = Joi.object({
-    name: Joi.string().min(5).required(),
     email: Joi.string().email().min(6).required(),
+    name: Joi.string().min(5).required(),
     password: Joi.string().min(6).required(),
   });
 
@@ -94,6 +95,7 @@ exports.register = async (req, res) => {
 exports.login = async (req, res) => {
   try {
     // our validation schema here
+    console.log(req.body);
     const schema = Joi.object({
       email: Joi.string().email().min(5).required(),
       password: Joi.string().min(4).required(),
@@ -136,7 +138,7 @@ exports.login = async (req, res) => {
       { userId, name, email },
       process.env.ACCESS_TOKEN_SECRET,
       {
-        expiresIn: "10m", //token will be expired in 10 mins
+        expiresIn: "1d", //token will be expired in 10 mins
       }
     );
     const refreshToken = jwt.sign(
